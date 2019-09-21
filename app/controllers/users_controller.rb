@@ -10,9 +10,17 @@ class UsersController < ApplicationController
   end
 
   def index
+    @index = 0 
     @users = User.all
   end
 
+  def destroy 
+    user = User.find(params[:id])
+    user.delete
+    redirect_to action: :index
+  end
+
+  
   
     private 
 

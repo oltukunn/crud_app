@@ -1,7 +1,10 @@
 <h1>投稿表示画面</h1>
 <% @users.each do |user| %>
+  <p><%= @index += 1%></p>
   <p>お名前:<%= user.name %></p>
   <p>ご年齢:<%= user.age %></p>
+  <%= link_to "削除する", user_path(user), method: :delete, data:{confirm: "本当に削除しますか?"} %>
+  <p>-------------------------</p>
 <% end %>
-<%= link_to "投稿画面へ", users_path(user) %>
+<%= link_to "投稿画面へ", new_user_path , method: :get %>
 
