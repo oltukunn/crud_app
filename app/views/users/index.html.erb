@@ -1,0 +1,7 @@
+<h1>投稿表示画面</h1>
+<% @users.each do |user| %>
+  <p>お名前:<%= user.name %></p>
+  <p>ご年齢:<%= user.age %></p>
+<% end %>
+<%= link_to "投稿画面へ", users_path(user) %>
+
