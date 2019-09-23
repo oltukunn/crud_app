@@ -12,16 +12,11 @@ namespace :import_csv do
       }
     end
     puts "インポート処理を開始"
-
     begin
-      User.transaction do
-        User.create!(list)
-      end
+      User.create!(list)
       puts "インポート完了!!"
     rescue ActiveModel::UnknownAttributeError => invalid
       puts "インポートに失敗：UnknownAttributeError"
     end
   end
 end
-
-
