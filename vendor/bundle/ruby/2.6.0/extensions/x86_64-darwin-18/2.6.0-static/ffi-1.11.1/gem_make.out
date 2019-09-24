@@ -1,5 +1,5 @@
 current directory: /Users/aki/Desktop/共同開発４/sample_app/vendor/bundle/ruby/2.6.0/gems/ffi-1.11.1/ext/ffi_c
-/Users/aki/.rbenv/versions/2.6.2/bin/ruby -I /Users/aki/.rbenv/versions/2.6.2/lib/ruby/2.6.0 -r ./siteconf20190923-28421-dcr4ow.rb extconf.rb
+/Users/aki/.rbenv/versions/2.6.2/bin/ruby -I /Users/aki/.rbenv/versions/2.6.2/lib/ruby/2.6.0 -r ./siteconf20190924-38167-1tnud29.rb extconf.rb
 checking for ffi.h... no
 checking for ffi.h in /usr/local/include,/usr/include/ffi... no
 checking for shlwapi.h... no
